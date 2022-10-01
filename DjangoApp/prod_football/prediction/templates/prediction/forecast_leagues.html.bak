@@ -1,0 +1,11 @@
+<p></p> 
+<p></p> 
+<p></p> 
+<h1>Prediction </h1>
+<p></p> 
+<p></p> 
+<p></p> 
+<a href="/predict/random_forest" class="button" style="font-size:20" >Random Forest</a>
+<p></p> 
+<p></p> 
+<a href="/predict/ann" class="button" style="font-size:20" >ANN</a>

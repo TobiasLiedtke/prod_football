@@ -1,0 +1,58 @@
+
+<h1> Random Forest Prediction Premierleague </h1>
+
+
+
+<form action="{% url 'random_forest_results_premierleague' %}">
+	<select class="select-toggle" multiple="multiple" name = "selectvariables" size="12" >
+	  <option value="Heimmannschaft_ID">Heimmannschaft_ID</option>
+	  <option value="Gegner_ID">Gegner_ID</option>
+	  <option value="Kaderwert_Differenz">Kaderwert_Differenz</option>
+	  <option value="Kaderwert_Per_Spieler_Differenz">Kaderwert_Per_Spieler_Differenz</option>
+	  <option value="Abwehrdifferenz">Abwehrdifferenz</option>
+	  <option value="Gesamtdiffferenz">Gesamtdiffferenz</option>
+	  <option value="Angriffdifferenz">Angriffdifferenz</option>
+	  <option value="Mittelfelddifferenz">Mittelfelddifferenz</option>
+	  <option value="Heimangriff_Abwehr_Differenz">Heimangriff_Abwehr_Differenz</option>
+	  <option value="Auswärtsangriff_Abwehr_Differenz">Auswärtsangriff_Abwehr_Differenz</option>
+	  <option value="Trainer_ID">Trainer_ID</option>
+	  <option value="Gegner_Trainer_ID">Gegner_Trainer_ID</option>
+	  <option value="B365H">B365H</option>
+	  <option value="B365A">B365A</option>
+	  <option value="B365D">B365D</option>
+	  <option value="HeimSystem">HeimSystem</option>
+	  <option value="AuswärtsSystem">AuswärtsSystem</option>
+	  <option value="Home_Shot_Feature">Home_Shot_Feature</option>
+	  <option value="Home_Shot_On_Goal_Feature">Home_Shot_On_Goal_Feature</option>
+	  <option value="Home_Fouls_Feature">Home_Fouls_Feature</option>
+	  <option value="Home_Corner_Feature">Home_Corner_Feature</option>
+	  <option value="Home_Yellowcard_Feature">Home_Yellowcard_Feature</option>
+	  <option value="Away_Shot_Feature">Away_Shot_Feature</option>
+	  <option value="Away_Shot_On_Goal_Feature">Away_Shot_On_Goal_Feature</option>
+	  <option value="Away_Fouls_Feature">Away_Fouls_Feature</option>
+	  <option value="Away_Corner_Feature">Away_Corner_Feature</option>
+	  <option value="Away_Yellowcard_Feature">Away_Yellowcard_Feature</option>
+	  <option value="Statistic_Feature">Statistic_Feature</option>
+	</select>
+	<div class="col-md-offset-1 col-md-1" >
+		<input type="text" class="form-control" placeholder="vereins_id" aria-label="vereins_id" name = "vereins_id">
+	</div>
+	<div class="col-md-offset-1 col-md-1">
+		<input type="text" class="form-control" placeholder="saison" aria-label="saison" name = "saison">
+	</div>
+	<div class="col-md-offset-1 col-md-1">
+		<input type="text" class="form-control" placeholder="spieltag" aria-label="spieltag" name = "spieltag">
+	</div>
+	<button type="submit" name = "randomforest" value = "randomforest" class="btn btn-primary btn-sm" >Start Algorithmus</button>
+</form>
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,8 @@
+{% load static %}
+
+<p> Number of matchdays <br>
+
+{% for saison, spieltag, table in zipped_bundesliga %}
+The table: {{ table }} has in Season {{ saison }} nbr of spieltage: {{ spieltag }} <br>
+{% endfor %}
+</p>

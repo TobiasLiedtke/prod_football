@@ -1,0 +1,15 @@
+{% load static %}
+
+<p> Number of matchdays Bundesliga <br>
+
+{% for saison, spieltag, table in zipped_bundesliga %}
+The table: {{ table }} has in Season {{ saison }} nbr of spieltage: {{ spieltag }} <br>
+{% endfor %}
+</p>
+
+<p> Number of matchdays Premier League<br>
+
+{% for saison, spieltag, table in zipped_premier_league %}
+The table: {{ table }} has in Season {{ saison }} nbr of spieltage: {{ spieltag }} <br>
+{% endfor %}
+</p>

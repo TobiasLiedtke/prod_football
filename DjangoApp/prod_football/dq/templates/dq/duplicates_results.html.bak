@@ -1,0 +1,8 @@
+{% if duplicates_output_bundesliga %}
+	<p> Duplicates in <br> 
+	{% for duplicate in duplicates_output_bundesliga %} <br> 
+		{{duplicate}} <br> 
+	{% endfor %}
+{% else %}
+	No duplicates in any table </p>
+{% endif %}

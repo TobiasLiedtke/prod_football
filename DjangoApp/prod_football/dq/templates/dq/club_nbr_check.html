@@ -1,0 +1,27 @@
+
+<p> Number of clubs bundesliga <br>
+Table, Saison and Spieltage with a wrong number of Clubs: 
+
+{% for saison, spieltag, table, club in zipped_bundesliga %}
+The table: {{ table }} has in Season {{ saison }} for spieltage {{ spieltag }} the number of clubs : {{ club }} <br>
+{% endfor %}
+
+
+{% for saison, spieltag, table, club in zipped_homeid_bundesliga %}
+The table: {{ table }} has in Season {{ saison }} for spieltage {{ spieltag }} the number of clubs : {{ club }} <br>
+{% endfor %}
+</p>
+
+
+<p> Number of clubs Premierleague <br>
+Table, Saison and Spieltage with a wrong number of Clubs: 
+
+{% for saison, spieltag, table, club in zipped_premierleague %}
+The table: {{ table }} has in Season {{ saison }} for spieltage {{ spieltag }} the number of clubs : {{ club }} <br>
+{% endfor %}
+
+
+{% for saison, spieltag, table, club in zipped_homeid_premierleague %}
+The table: {{ table }} has in Season {{ saison }} for spieltage {{ spieltag }} the number of clubs : {{ club }} <br>
+{% endfor %}
+</p>
